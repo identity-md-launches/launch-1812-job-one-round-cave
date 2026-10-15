@@ -73,3 +73,18 @@ vacant upper stone. The existing image byte utilities encode delivery PNG/JPEG
 bytes. Every pixel outside the new pigment patch is unchanged. GOAL.md and older
 records remain unchanged; no wallet, secret, signature, payment, transaction,
 deployment, new dependency or new coin was needed.
+
+The snapshot request matcher reuses the bounded snapshot validator and safe
+workspace file reader unchanged. Its offline examples use the real saved ZTO
+totalSupply observation from snapshot-integer and the finalized-block capture
+from snapshot-select; source hashes are in its provenance.json. Gathering 15
+reported no broken Line 1 piece. Explicit expected methods and parameters now
+detect a substituted request even if the stored response checksum still passes.
+The wall starts from record 35's verified PNG. The built-in imagegen tool added
+a seed fitted to a charcoal hollow; only its new dark pigment was transferred
+onto vacant stone below Pepe, preserving every pixel outside that addition.
+The existing image_bytes.py decoder checked dimensions and preservation, and
+the installed FFmpeg formatted delivery bytes. The new tool has no external
+dependency. GOAL.md and older records remain unchanged; no fresh chain read,
+wallet, key, secret, signature, payment, transaction, deployment or new coin
+was needed.

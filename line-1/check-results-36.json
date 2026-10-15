@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/snapshot-request-match",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_both_expectations_are_mandatory (test_match.RequestMatchTests.test_both_expectations_are_mandatory) ... ok\ntest_checksum_and_envelope_validation_precede_report (test_match.RequestMatchTests.test_checksum_and_envelope_validation_precede_report) ... ok\ntest_consistently_resealed_fabrication_is_not_authenticated (test_match.RequestMatchTests.test_consistently_resealed_fabrication_is_not_authenticated) ... ok\ntest_edit_request_without_response_change_is_detected (test_match.RequestMatchTests.test_edit_request_without_response_change_is_detected) ... ok\ntest_hex_case_is_literal (test_match.RequestMatchTests.test_hex_case_is_literal) ... ok\ntest_invalid_expected_request_is_rejected_before_open (test_match.RequestMatchTests.test_invalid_expected_request_is_rejected_before_open) ... ok\ntest_output_bound (test_match.RequestMatchTests.test_output_bound) ... ok\ntest_oversized_observed_request_is_refused (test_match.RequestMatchTests.test_oversized_observed_request_is_refused) ... ok\ntest_params_and_complete_request_limits (test_match.RequestMatchTests.test_params_and_complete_request_limits) ... ok\ntest_path_and_input_bounds (test_match.RequestMatchTests.test_path_and_input_bounds) ... ok\ntest_pointer_escapes_and_missing_fields (test_match.RequestMatchTests.test_pointer_escapes_and_missing_fields) ... ok\ntest_real_block (test_match.RequestMatchTests.test_real_block) ... ok\ntest_real_zto_is_offline_and_immutable (test_match.RequestMatchTests.test_real_zto_is_offline_and_immutable) ... ok\ntest_reordered_object_keys_and_json_spacing_match (test_match.RequestMatchTests.test_reordered_object_keys_and_json_spacing_match) ... ok\ntest_strict_snapshot_json (test_match.RequestMatchTests.test_strict_snapshot_json) ... ok\ntest_type_sensitive_comparison (test_match.RequestMatchTests.test_type_sensitive_comparison) ... ok\ntest_wrong_selector_token_tag_and_method (test_match.RequestMatchTests.test_wrong_selector_token_tag_and_method) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.031s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/snapshot-request-match/match.py",
+        "line-1/tools/snapshot-integer/live-zto.json",
+        "--method",
+        "eth_call",
+        "--params",
+        "[{\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\"data\":\"0x18160ddd\"},\"latest\"]"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"differences\":[],\"expected_request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"latest\"]},\"expected_request_sha256\":\"b448f4ab36f30da374c70d150d3f7f5f9e139c55df7f1fe3f774f4c1d4cfd662\",\"matched\":true,\"meaning\":\"Exact intended-read comparison of a validated saved snapshot; not proof that this request produced the response, Ethereum state, or freshness.\",\"observed_request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"latest\"]},\"observed_request_sha256\":\"b448f4ab36f30da374c70d150d3f7f5f9e139c55df7f1fe3f774f4c1d4cfd662\",\"response_sha256\":\"c246b76a086839ea8ee44de616317a5a95acb90bda1a5186275df5d2a765764e\",\"schema\":\"line1-snapshot-request-match-v1\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/snapshot-request-match/match.py",
+        "line-1/tools/snapshot-integer/live-zto.json",
+        "--method",
+        "eth_call",
+        "--params",
+        "[{\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\"data\":\"0x18160ddd\"},\"finalized\"]"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\"differences\":[{\"expected\":\"finalized\",\"kind\":\"value\",\"observed\":\"latest\",\"path\":\"/params/1\"}],\"expected_request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"finalized\"]},\"expected_request_sha256\":\"de545751507e5010d5d02c458cc38e84ad034b923a54b2c12e3f53424c4c7abf\",\"matched\":false,\"meaning\":\"Exact intended-read comparison of a validated saved snapshot; not proof that this request produced the response, Ethereum state, or freshness.\",\"observed_request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"latest\"]},\"observed_request_sha256\":\"b448f4ab36f30da374c70d150d3f7f5f9e139c55df7f1fe3f774f4c1d4cfd662\",\"response_sha256\":\"c246b76a086839ea8ee44de616317a5a95acb90bda1a5186275df5d2a765764e\",\"schema\":\"line1-snapshot-request-match-v1\"}\n",
+      "stderr": ""
+    }
+  ],
+  "tests_passed": 17,
+  "independent_agent_review": "No blocking findings; focused suite and both demo outcomes independently reproduced.",
+  "authority": "Local checks only; not independent certification or chain proof.",
+  "goal_unchanged": true,
+  "older_records_and_thumbnails_unchanged": true,
+  "record_count": 36,
+  "record_shape_and_hash_valid": true,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "png_format": "PNG RGB",
+  "jpeg_format": "JPEG",
+  "wall_output_sha256": "d04584a1de60bc2a7ac085bf04d4fe0ccf0a9835da79e5eb8f19e047590be00d",
+  "wall_outputs_untracked": true,
+  "changed_paths_within_scope": true,
+  "new_nonartifact_files_under_100000_bytes": true,
+  "changed_pixels": 2213,
+  "unchanged_pixels": 1570303,
+  "unmet_visual_requirements": [],
+  "fresh_public_read": false,
+  "real_evidence": "Historical real ZTO totalSupply and finalized Ethereum block snapshots reused unchanged."
+}

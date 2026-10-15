@@ -1,0 +1,9 @@
+{
+  "reused_unchanged": {
+    "line-1/tools/bounded-rpc-snapshot/snapshot.py": "3df4d6ad7fd38e9730fe159ea6185f7c72e6a1d022aa79dd5a864e4226b7b651",
+    "line-1/tools/safe-snapshot-files/safe_files.py": "8a465d8df43762067d67c6ba35ecfdf8a572e16f66370ac8596ab65010575272",
+    "line-1/tools/snapshot-integer/live-zto.json": "d620b767ccc4b4ea42e7660af9fc15aeb481a808888d43675c300820f3e6b51f",
+    "line-1/tools/snapshot-select/live-block.json": "f74e0f7e39ec5140e7f1053ae06bd5b78009e7e52b5cdcc8b84ae756bc804b1d"
+  },
+  "observation": "Historical real Ethereum Publicnode ZTO totalSupply and finalized-block fixtures. No new network observation; no result authenticity or freshness claim."
+}

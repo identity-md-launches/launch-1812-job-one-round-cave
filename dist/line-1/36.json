@@ -1,0 +1,30 @@
+{
+  "name": "The Fitting Seed",
+  "image": "https://api.imd.fun/artifacts/d04584a1de60bc2a7ac085bf04d4fe0ccf0a9835da79e5eb8f19e047590be00d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 36
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Snapshot request match"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe fits a seed to the hollow he meant to fill."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum JSON-RPC snapshots"
+    }
+  ]
+}

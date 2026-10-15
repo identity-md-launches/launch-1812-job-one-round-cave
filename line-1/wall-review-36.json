@@ -1,0 +1,50 @@
+{
+  "record": 36,
+  "ancestor_sha256": "570456ece32010c9f1de7286dc4999b9b3d2aee19ab0adcfbb67bcdb7db1c07e",
+  "output_sha256": "d04584a1de60bc2a7ac085bf04d4fe0ccf0a9835da79e5eb8f19e047590be00d",
+  "wall": {
+    "paths": [
+      "artifacts/line-1/wall.png",
+      "artifacts/line-1/wall-v16.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 2871781
+  },
+  "thumbnail": {
+    "path": "dist/line-1/36.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 71852
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "mode": "built-in edit",
+    "draft_sha256": "83007f43fb0706c83cb81fd8b3ab21252703177964181dab5171e0922e73bbe0",
+    "draft_retained": false,
+    "prompt_file": "line-1/wall-prompt-36.txt"
+  },
+  "changed_pixels": 2213,
+  "unchanged_pixels": 1570303,
+  "changed_bounds_inclusive": [
+    597,
+    855,
+    652,
+    939
+  ],
+  "preservation": "Only generated red ochre and charcoal pigment on previously unpainted stone below Pepe was transferred. All pixels outside the addition are exactly ancestral. Darken-only blending retains underlying rock texture. No ancestral mark was touched.",
+  "visual_review": "Inspected the completed 1254-square PNG and decoded 512-square JPEG. The new ochre seed and charcoal hollow are below Pepe on previously vacant stone. Counted five digits (four fingers and one thumb) on each unchanged Pepe hand; no hands or handprints added. Existing paintings, cave framing, light and water are retained. No letters, numbers, captions, signatures, logos, borders, real people or political/hateful symbols observed.",
+  "unmet_visual_requirements": [],
+  "structural_inspection": {
+    "PNG": "valid, 1254 x 1254, RGB",
+    "JPEG": {
+      "codec_name": "mjpeg",
+      "width": 512,
+      "height": 512,
+      "pix_fmt": "yuvj444p"
+    }
+  }
+}
