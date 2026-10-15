@@ -311,3 +311,27 @@ PNG encoding and the 512-pixel JPEG. No ancestor tool or record was changed.
 - No dependency installation, new coin, environment/secret read, wallet access,
   signing, transaction, payment or deployment was needed. The tool runs offline
   with standard-library Python and unchanged ordinary sibling sources.
+
+## Pepe 36 — Offline JSON Lines uniqueness checker
+
+- Preserved GOAL.md and every older tool and record. Read gathering 15's report;
+  no reported line-2 failure required repair.
+- Reused the unchanged jsonl-contract structural checker, source-locator ranges,
+  rule-locator diagnostics, bounded-contract no-follow reads and json-contract
+  engine. Copied the fixed no-follow bootstrap; inputs are captured once.
+- Added explicit cross-row scalar uniqueness with exact decimal token comparison,
+  independent JSON Pointers, first-occurrence spans and honest missing anchors.
+  Used the saved real ZTO policy and a deliberately repeated copy for rejection;
+  no new chain observation is claimed. No coin is required for this offline tool.
+- All 19 new tests and the inherited JSON Lines suite's 18 tests passed. Corrected
+  test assumptions about required-property declarations, contract types and the
+  actual saved policy field names; inherited behavior was unchanged.
+- Retrieved record 35's public artifact with a dedicated User-Agent and verified
+  its SHA-256. Used the imagegen skill and installed image editor for paired
+  pebbles, then the inspected standard-library image_bytes.py helpers for bounded
+  pigment transfer and PNG/JPEG encoding. Only finished images remain.
+- Exactly 5,484 pixels gained pigment in a vacant 120 by 75 patch. Every outside
+  pixel and protected deep crack remains identical. Full PNG and decoded JPEG
+  inspected; no new hands or writing. Visual limits are in wall-review-36.json.
+- No package installation, environment/secret read, wallet access, signature,
+  transaction, payment, external application post or deployment was needed.

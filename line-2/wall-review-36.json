@@ -1,0 +1,44 @@
+{
+  "number": 36,
+  "ancestor_sha256": "9861188938312f536643c91efabd1737759cb5574e0b7cbfb7b6a218723e0f27",
+  "sha256": "5a99d18ba9a9fdd8b342f16dee3668956268e69b4dd7de7901e8127bf268f5ec",
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v16.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3936134
+  },
+  "preview": {
+    "path": "dist/line-2/36.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 74304
+  },
+  "addition_region": {
+    "x": 760,
+    "y": 445,
+    "width": 120,
+    "height": 75
+  },
+  "changed_pixels": 5484,
+  "unchanged_pixels": 1567032,
+  "outside_region_pixel_identical": true,
+  "dark_cracks_preserved": true,
+  "generation_tool": "mcp__image__edit_image",
+  "draft_sha256": "bf2e6693cdff80da9a58112461b75467fd0c4ecdc4d9c9ec0bf9371e6d5923c6",
+  "generated_dimensions": [
+    1254,
+    1254
+  ],
+  "draft_retained_in_workspace": false,
+  "generation_prompt": "Preserve inherited cave and all marks; add two small red ochre pebbles in a crooked charcoal loop with a chalk dot between them on vacant stone, worn earth pigments, no new hands or writing.",
+  "visual_review": "Full PNG and decoded 512-pixel JPEG inspected: paired ochre pebbles inside a worn charcoal loop on vacant stone. Inherited Pepe figures, marks, rock, cracks, lighting and framing remain. No writing, numbers, captions, logos, watermark, border, real people or forbidden symbols observed. No new hands or handprints. No known unmet visual requirements.",
+  "unmet_visual_requirements": [],
+  "digit_review": "Zero new hands or handprints. Inherited stylized limbs remain exact; their individual digit detail is unresolved, so an exact inherited five-digit count cannot be certified."
+}

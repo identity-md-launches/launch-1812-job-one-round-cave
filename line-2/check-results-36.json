@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "command": "python3 -B line-2/tools/jsonl-unique/test_check.py",
+      "exit": 0,
+      "result": "lity) ... ok\ntest_unique_values (__main__.UniqueTests.test_unique_values) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.053s\n\nOK"
+    },
+    {
+      "command": "python3 -B line-2/tools/jsonl-contract/test_check.py",
+      "exit": 0,
+      "result": "ns (__main__.JsonLinesTests.test_unicode_crlf_global_spans_and_key_spans) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.791s\n\nOK"
+    },
+    {
+      "command": "python3 -B line-2/tools/jsonl-unique/check.py shared/payment-evidence/policy.contract.json line-2/tools/jsonl-contract/zto-policy.jsonl --unique /tx",
+      "exit": 0,
+      "valid": true,
+      "uniqueness_errors": 0
+    },
+    {
+      "command": "python3 -B line-2/tools/jsonl-unique/check.py shared/payment-evidence/policy.contract.json line-2/tools/jsonl-unique/repeated-policy.jsonl --unique /tx",
+      "exit": 1,
+      "valid": false,
+      "uniqueness_errors": 1
+    },
+    {
+      "check": "detached folder containing only six ordinary tool sources and two saved input files",
+      "exit": 0,
+      "valid": true
+    }
+  ],
+  "new_tests_passed": 19,
+  "inherited_tests_passed": 18,
+  "goal_byte_identical": true,
+  "older_records_and_tools_unchanged": true,
+  "allowed_scope": true,
+  "new_file_size_limit": true,
+  "record_shape_hash_and_count": true,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "required_pngs_untracked": true,
+  "authority": "local observations only"
+}

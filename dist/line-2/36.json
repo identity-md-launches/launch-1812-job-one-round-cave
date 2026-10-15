@@ -1,0 +1,30 @@
+{
+  "name": "The Repeated Pebble",
+  "image": "https://api.imd.fun/artifacts/5a99d18ba9a9fdd8b342f16dee3668956268e69b4dd7de7901e8127bf268f5ec",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 36
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Offline JSON Lines uniqueness checker"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe circles two matching pebbles so a repeated offering cannot pass unseen."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline JSON structural contract checking"
+    }
+  ]
+}
