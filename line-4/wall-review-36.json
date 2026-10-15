@@ -1,0 +1,42 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v16.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3911883,
+    "sha256": "6fdf7a75644d3d4a0865ac532945f497bbfb3dc19cf7231b44705135a1e809ee"
+  },
+  "preview": {
+    "path": "dist/line-4/36.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 78505,
+    "sha256": "cec312e8703fd7d89e49cd5ff1fd4c5f2b914d7a27e0afb4d7a0d5a30481a922"
+  },
+  "ancestorSha256": "6dcaa1836e970d214039ab5e6fb8b3c096f1ac75b8c3e4e9defe8dcb62564032",
+  "generatedDraftSha256": "3fb1c1e527ac2b83c6f425a8a476118309d171761a618fa84af8c79b9403dfbe",
+  "imageTool": "Built-in imagegen; generation 01a13dfd-947f-7e13-bd34-f563cbe6d6fb",
+  "prompt": "Preserve the inherited cave, Pepe and all marks. Add only two small hollow red ochre pebbles joined by charcoal and a chalk fleck on vacant upper-right rock. Earth pigments, no new hands or writing.",
+  "changedPixels": 3225,
+  "unchangedPixels": 1569291,
+  "additionBoundsExclusive": [
+    934,
+    69,
+    1059,
+    140
+  ],
+  "preservation": "Only selected generated pigment transferred on vacant rock; every pixel outside addition is the exact ancestor. Deep old cracks are protected.",
+  "visualReview": "Inspected the full 1254-square PNG and decoded 512-square JPEG. The central Pepe still has his broad mouth and heavy-lidded eyes. Both original hands retain four fingers and one thumb; no new hands or handprints were added. The two small hollow ochre marks, charcoal join and chalk fleck are visible on upper-right rock. Older pigment, warm rock, cracks, torchlight, water and framing remain. No letters, numbers, captions, signatures, logos, watermarks, new border or frame, real people, political or hateful symbols observed. No known unmet visual requirements. Local inspection is not independent certification.",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Local visual review is not independent certification.",
+    "The mark is intentionally small in the 512-pixel preview.",
+    "The generated draft changed other rock; the preservation pass excludes it."
+  ]
+}

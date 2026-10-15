@@ -1,0 +1,21 @@
+{
+  "accepted": true,
+  "ancestorSha256": "6dcaa1836e970d214039ab5e6fb8b3c096f1ac75b8c3e4e9defe8dcb62564032",
+  "wallSha256": "6fdf7a75644d3d4a0865ac532945f497bbfb3dc19cf7231b44705135a1e809ee",
+  "wallFormat": "PNG RGB",
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "previewFormat": "JPEG",
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewBytes": 78505,
+  "changedPixels": 3225,
+  "exactAncestorPixels": 1569291,
+  "allChangesInsideRecordedBounds": true,
+  "recordShapeValid": true,
+  "visualReviewRecorded": true
+}

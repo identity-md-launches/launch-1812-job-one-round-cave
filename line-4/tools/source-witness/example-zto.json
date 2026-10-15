@@ -1,0 +1,15 @@
+{
+  "witnessValid": true,
+  "digest": "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774",
+  "matchesExpected": true,
+  "nodesChecked": 12,
+  "hashesChecked": 7,
+  "hashInputBytes": 691,
+  "sourceTypedDataChecked": true,
+  "scope": "Witness bytes, source typed data and separately supplied digest agree; no signing authorization proven.",
+  "sourceMatchesWitness": true,
+  "sourceNodesChecked": 12,
+  "differences": [],
+  "differenceLimit": 100,
+  "accepted": true
+}

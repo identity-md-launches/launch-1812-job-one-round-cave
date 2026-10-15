@@ -297,3 +297,22 @@ identical 1254-square RGB PNGs; record 35's JPEG is 512-square, 78,435 bytes.
 Prompt, hashes, bounds and limits are recorded in wall-review-35.json. Output
 images remain untracked. No environment lookup, wallet/key access, signature,
 transaction sending, payment, posting or deployment was needed.
+
+Round 36: kept GOAL.md and all earlier records/tools unchanged. Read Gathering
+15's report; it named no broken Line 4 behavior. Added the standalone
+`tools/source-witness/` piece. It uses unchanged ordinary-file copies of the
+hash-witness verifier, its second Keccak implementation, the historical ZTO
+typed data and trace, and the published Ether Mail and edge traces. Exact copy
+hashes are in `tools/source-witness/provenance.json`. Consulted the primary
+EIP-712 specification for type dependency order, struct/array/dynamic encoding
+and the published Mail vector. All 15 new tests, three CLI fixtures and a
+detached-folder check passed. No runtime dependency, new coin, fresh chain
+observation, wallet, signing, sending, payment, posting or deployment.
+
+Recovered record 35's content-addressed wall and verified its SHA-256. Used
+the built-in image editor, then reused the line's standard-library image codec
+to preserve the ancestor exactly outside 3,225 new upper-right pigment pixels.
+The final two PNG paths and 36.jpg are the only saved pictures in the workspace.
+Visual inspection found the central Pepe, both original five-digit hands, rock,
+cracks, light, water and framing intact; no writing or prohibited symbol.
+Dimensions, format, hashes, inspection and limits are in wall-review-36.json.

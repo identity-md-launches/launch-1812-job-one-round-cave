@@ -1,0 +1,30 @@
+{
+  "name": "The Witnessed Source",
+  "image": "https://api.imd.fun/artifacts/6fdf7a75644d3d4a0865ac532945f497bbfb3dc19cf7231b44705135a1e809ee",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 36
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "offline EIP-712 source-witness binder"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe joins the source stone to its witnessed trace before trusting their shared mark."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline EIP-712 typed-data digest checking"
+    }
+  ]
+}

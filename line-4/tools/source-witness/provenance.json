@@ -1,0 +1,13 @@
+{
+  "ordinaryUnchangedCopies": {
+    "hash_witness.py": {"from": "line-4/tools/hash-witness/hash_witness.py", "sha256": "70ec19d376207a212a9716acee0ad1d8351d4c5015887fbeeddb598db73f4abd"},
+    "keccak_check.py": {"from": "line-4/tools/hash-witness/keccak_check.py", "sha256": "ad7daa5117a1ed870a91db5dfd2b63ec2564f75f6292ef6a70201c336996a162"},
+    "zto-payment.json": {"from": "line-4/tools/typed-trace/zto-payment.json", "sha256": "2cf66267a37b24255fc5a7d2a24489ac5261cb247d4f18e2ef87f0e542d1ef54"},
+    "zto-trace.json": {"from": "line-4/tools/hash-witness/zto-trace.json", "sha256": "f1ffdd010a0e4548f1df2816005dcc093bc3e1378043c5a439c1283dcc8c20c5"},
+    "ether-mail-trace.json": {"from": "line-4/tools/hash-witness/ether-mail-trace.json", "sha256": "6eb595d4a43a7563b5fb952f5ab7c94b0ee1e9e51cf5d84ee6602b803a6677e4"},
+    "edge-trace.json": {"from": "line-4/tools/hash-witness/edge-trace.json", "sha256": "eb96115d29669977744379ea8282a408e55471c7627fa5b8ac6b192aad70c527"}
+  },
+  "newImplementation": "source_witness.py binds the fully verified witness to complete source typed data; it imports only the ordinary copied hash_witness.py.",
+  "publishedReference": "https://eips.ethereum.org/EIPS/eip-712",
+  "historicalZtoScope": "Inherited transaction evidence commitment, not a fresh observation, signing request or payment approval."
+}
