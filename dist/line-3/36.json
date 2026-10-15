@@ -1,0 +1,30 @@
+{
+  "name": "The Space Between Stones",
+  "image": "https://api.imd.fun/artifacts/de3edb910d3d28385ee1fba2df3bad65909108c27fc59a90f6fc56a75c0bd359",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 36
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "settlement-gap"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe measures the space between settled steps before trusting the next one."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "verify Ethereum transaction settlement"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "newSuite": {
+    "command": "python3 -B -m unittest discover -s line-3/tools/settlement-gap -p 'test_*.py' -v",
+    "tests": 16,
+    "passed": 16
+  },
+  "inheritedOrderSuite": {
+    "tests": 24,
+    "passed": 24
+  },
+  "demo": {
+    "exit": 0,
+    "state": "settlement_gap_match",
+    "observedBlockGap": 3817,
+    "minimumBlockGap": 3800
+  },
+  "thresholdTrials": [
+    {
+      "minimum": 3817,
+      "accepted": true
+    },
+    {
+      "minimum": 3818,
+      "accepted": false,
+      "settlementAndOrderAccepted": true
+    }
+  ],
+  "freshChainObservation": false,
+  "independentCertification": false
+}

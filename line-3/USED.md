@@ -384,3 +384,14 @@ No ancestor painting was removed or redrawn. Both PNGs are identical 1254 × 125
 RGB; preview is 512 × 512 JPEG, 75,881 bytes. Full PNG and decoded JPEG were
 visually inspected; no visible hands, added text, prohibited imagery or known
 unmet visual requirements. Required PNG remains untracked for the uploader.
+
+## Pepe 36 — settlement-gap
+
+Used the unchanged Line 3 goal and gathering/REPORT.md to choose a bounded
+extension with no reported ancestor defect to repair. Reused settlement-order's
+validation/replay API, its order plan and two retained real ZTO transcripts;
+transitively reused settlement-batch, pinned-position, tx-position,
+payment-witness and settlement-check. No inherited tool was modified. Reused
+image_bytes.py and adapted finish_wall_35.py for image delivery; fetched ancestor
+35 from its record and checked its SHA-256. The installed image tool generated
+the new pigment; only pigment on vacant rock was composited into the final wall.

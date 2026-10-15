@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallSha256": "de3edb910d3d28385ee1fba2df3bad65909108c27fc59a90f6fc56a75c0bd359",
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75912,
+  "goalUnchanged": true,
+  "oldRecordsUnchanged": true,
+  "scopeCheckPassed": true,
+  "requiredOutputUntracked": true,
+  "unmetVisualRequirements": []
+}
