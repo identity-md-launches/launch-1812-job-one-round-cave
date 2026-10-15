@@ -1,0 +1,181 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/test_witness_payment.py"
+    ],
+    "detached": false,
+    "expectedExit": 0,
+    "exitCode": 0,
+    "passed": true,
+    "stdout": "",
+    "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.929s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/witness_payment.py",
+      "shared/payment-evidence/example.transcript.json",
+      "shared/payment-evidence/example.policy.json",
+      "shared/payment-evidence/example.typed-data.json",
+      "shared/payment-evidence/example.source-witness.json",
+      "--chain-id",
+      "1",
+      "--name",
+      "Read-only Payment Evidence",
+      "--version",
+      "1",
+      "--primary-type",
+      "PaymentEvidence",
+      "--no-verifier",
+      "--expect-digest",
+      "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c"
+    ],
+    "detached": false,
+    "expectedExit": 0,
+    "exitCode": 0,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": true,\n  \"state\": \"payment_source_witness_match\",\n  \"paymentReview\": {\n    \"accepted\": true,\n    \"state\": \"exact_payment_review_matches\",\n    \"alerts\": [],\n    \"paymentAccepted\": true,\n    \"clientMatchesPaymentCommitment\": true,\n    \"domainAndPrimaryTypeMatch\": true,\n    \"paymentMatchesExpectedDigest\": true,\n    \"paymentCommitment\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n    \"integerReview\": {\n      \"reviewVersion\": 1,\n      \"primaryType\": \"PaymentEvidence\",\n      \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n      \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n      \"messageHash\": \"0xf770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822\",\n      \"digest\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n      \"integers\": [\n        {\n          \"path\": \"/domain/chainId\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"json_integer\",\n          \"parsedValue\": \"1\",\n          \"exactDecimal\": \"1\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x0000000000000000000000000000000000000000000000000000000000000001\",\n          \"requiresExactIntegerHandling\": false,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"1\",\n            \"deltaDecimal\": \"0\",\n            \"changesValue\": false,\n            \"outsideDeclaredRange\": false\n          }\n        },\n        {\n          \"path\": \"/message/minimumRaw\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"decimal_string\",\n          \"parsedValue\": \"166357571280020680094504\",\n          \"exactDecimal\": \"166357571280020680094504\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x00000000000000000000000000000000000000000000233a43130efdb61e3328\",\n          \"requiresExactIntegerHandling\": true,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"166357571280020678115328\",\n            \"deltaDecimal\": \"-1979176\",\n            \"changesValue\": true,\n            \"outsideDeclaredRange\": false\n          }\n        },\n        {\n          \"path\": \"/message/confirmations\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"json_integer\",\n          \"parsedValue\": \"12\",\n          \"exactDecimal\": \"12\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x000000000000000000000000000000000000000000000000000000000000000c\",\n          \"requiresExactIntegerHandling\": false,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"12\",\n            \"deltaDecimal\": \"0\",\n            \"changesValue\": false,\n            \"outsideDeclaredRange\": false\n          }\n        }\n      ],\n      \"integerCount\": 3,\n      \"requiresExactIntegerHandling\": true,\n      \"hasUnsafeJsonNumbers\": false,\n      \"binary64CoercionChangesValue\": true,\n      \"interpretation\": \"Original exact integers determine the digest. Binary64 values are hypothetical nearest-even conversions, never substituted. Strings preserve input values but later Number coercion may lose precision. No units, token decimals or business meaning are inferred. No numeric cues does not mean approval.\",\n      \"matchesExpected\": true\n    },\n    \"providerAuthenticated\": false,\n    \"evidenceMode\": \"offline historical RPC observations\",\n    \"limits\": \"Historical provider assertions, not current settlement or a state proof. Caller policy, domain, type and digest must be independently chosen. Exact strings can still lose precision if later coerced to Number. A matching review authorizes no signature, token permit or payment.\"\n  },\n  \"sourceWitnessReview\": {\n    \"witnessValid\": true,\n    \"digest\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n    \"matchesExpected\": true,\n    \"nodesChecked\": 12,\n    \"hashesChecked\": 7,\n    \"hashInputBytes\": 691,\n    \"sourceTypedDataChecked\": true,\n    \"scope\": \"Witness bytes, source typed data and separately supplied digest agree; no signing authorization proven.\",\n    \"sourceMatchesWitness\": true,\n    \"sourceNodesChecked\": 12,\n    \"differences\": [],\n    \"differenceLimit\": 100,\n    \"accepted\": true\n  },\n  \"limitations\": \"Historical provider assertions, not current chain state or a state proof. Independent policy, domain, type and digest remain essential. The second Keccak implementation checks witness bytes; source binding is not a second independent encoder. No signing or payment authorization.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/witness_payment.py",
+      "shared/payment-evidence/example.transcript.json",
+      "shared/payment-evidence/example.policy.json",
+      "test/scratch/round16/substituted.json",
+      "shared/payment-evidence/example.source-witness.json",
+      "--chain-id",
+      "1",
+      "--name",
+      "Read-only Payment Evidence",
+      "--version",
+      "1",
+      "--primary-type",
+      "PaymentEvidence",
+      "--no-verifier",
+      "--expect-digest",
+      "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c"
+    ],
+    "detached": false,
+    "expectedExit": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": false,\n  \"state\": \"review_required\",\n  \"paymentReview\": {\n    \"accepted\": false,\n    \"state\": \"review_required\",\n    \"alerts\": [\n      \"client_differs_from_payment_commitment\",\n      \"retained_digest_mismatch\"\n    ],\n    \"paymentAccepted\": true,\n    \"clientMatchesPaymentCommitment\": false,\n    \"domainAndPrimaryTypeMatch\": true,\n    \"paymentMatchesExpectedDigest\": true,\n    \"paymentCommitment\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n    \"integerReview\": {\n      \"reviewVersion\": 1,\n      \"primaryType\": \"PaymentEvidence\",\n      \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n      \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n      \"messageHash\": \"0x922f09e995f66f7846582c7bc4640f1323c49aac64c04d06fc065388fac4ae9a\",\n      \"digest\": \"0xda9c4f7999c42e47dddacc4797faabdbc359bcf6e5fe5f70f9034362034c0bdf\",\n      \"integers\": [\n        {\n          \"path\": \"/domain/chainId\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"json_integer\",\n          \"parsedValue\": \"1\",\n          \"exactDecimal\": \"1\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x0000000000000000000000000000000000000000000000000000000000000001\",\n          \"requiresExactIntegerHandling\": false,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"1\",\n            \"deltaDecimal\": \"0\",\n            \"changesValue\": false,\n            \"outsideDeclaredRange\": false\n          }\n        },\n        {\n          \"path\": \"/message/minimumRaw\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"decimal_string\",\n          \"parsedValue\": \"166357571280020680094504\",\n          \"exactDecimal\": \"166357571280020680094504\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x00000000000000000000000000000000000000000000233a43130efdb61e3328\",\n          \"requiresExactIntegerHandling\": true,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"166357571280020678115328\",\n            \"deltaDecimal\": \"-1979176\",\n            \"changesValue\": true,\n            \"outsideDeclaredRange\": false\n          }\n        },\n        {\n          \"path\": \"/message/confirmations\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"json_integer\",\n          \"parsedValue\": \"12\",\n          \"exactDecimal\": \"12\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x000000000000000000000000000000000000000000000000000000000000000c\",\n          \"requiresExactIntegerHandling\": false,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"12\",\n            \"deltaDecimal\": \"0\",\n            \"changesValue\": false,\n            \"outsideDeclaredRange\": false\n          }\n        }\n      ],\n      \"integerCount\": 3,\n      \"requiresExactIntegerHandling\": true,\n      \"hasUnsafeJsonNumbers\": false,\n      \"binary64CoercionChangesValue\": true,\n      \"interpretation\": \"Original exact integers determine the digest. Binary64 values are hypothetical nearest-even conversions, never substituted. Strings preserve input values but later Number coercion may lose precision. No units, token decimals or business meaning are inferred. No numeric cues does not mean approval.\",\n      \"matchesExpected\": false\n    },\n    \"providerAuthenticated\": false,\n    \"evidenceMode\": \"offline historical RPC observations\",\n    \"limits\": \"Historical provider assertions, not current settlement or a state proof. Caller policy, domain, type and digest must be independently chosen. Exact strings can still lose precision if later coerced to Number. A matching review authorizes no signature, token permit or payment.\"\n  },\n  \"sourceWitnessReview\": {\n    \"witnessValid\": true,\n    \"digest\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n    \"matchesExpected\": true,\n    \"nodesChecked\": 12,\n    \"hashesChecked\": 7,\n    \"hashInputBytes\": 691,\n    \"sourceTypedDataChecked\": true,\n    \"scope\": \"Witness bytes, source typed data and separately supplied digest agree; no signing authorization proven.\",\n    \"sourceMatchesWitness\": false,\n    \"sourceNodesChecked\": 12,\n    \"differences\": [\n      {\n        \"path\": \"/message/token\",\n        \"reason\": \"atomic encoded word differs\"\n      }\n    ],\n    \"differenceLimit\": 100,\n    \"accepted\": false\n  },\n  \"limitations\": \"Historical provider assertions, not current chain state or a state proof. Independent policy, domain, type and digest remain essential. The second Keccak implementation checks witness bytes; source binding is not a second independent encoder. No signing or payment authorization.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/test_witness_payment.py"
+    ],
+    "detached": true,
+    "expectedExit": 0,
+    "exitCode": 0,
+    "passed": true,
+    "stdout": "",
+    "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.923s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/witness_payment.py",
+      "shared/payment-evidence/example.transcript.json",
+      "shared/payment-evidence/example.policy.json",
+      "shared/payment-evidence/example.typed-data.json",
+      "shared/payment-evidence/example.source-witness.json",
+      "--chain-id",
+      "1",
+      "--name",
+      "Read-only Payment Evidence",
+      "--version",
+      "1",
+      "--primary-type",
+      "PaymentEvidence",
+      "--no-verifier",
+      "--expect-digest",
+      "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c"
+    ],
+    "detached": true,
+    "expectedExit": 0,
+    "exitCode": 0,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": true,\n  \"state\": \"payment_source_witness_match\",\n  \"paymentReview\": {\n    \"accepted\": true,\n    \"state\": \"exact_payment_review_matches\",\n    \"alerts\": [],\n    \"paymentAccepted\": true,\n    \"clientMatchesPaymentCommitment\": true,\n    \"domainAndPrimaryTypeMatch\": true,\n    \"paymentMatchesExpectedDigest\": true,\n    \"paymentCommitment\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n    \"integerReview\": {\n      \"reviewVersion\": 1,\n      \"primaryType\": \"PaymentEvidence\",\n      \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n      \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n      \"messageHash\": \"0xf770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822\",\n      \"digest\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n      \"integers\": [\n        {\n          \"path\": \"/domain/chainId\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"json_integer\",\n          \"parsedValue\": \"1\",\n          \"exactDecimal\": \"1\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x0000000000000000000000000000000000000000000000000000000000000001\",\n          \"requiresExactIntegerHandling\": false,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"1\",\n            \"deltaDecimal\": \"0\",\n            \"changesValue\": false,\n            \"outsideDeclaredRange\": false\n          }\n        },\n        {\n          \"path\": \"/message/minimumRaw\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"decimal_string\",\n          \"parsedValue\": \"166357571280020680094504\",\n          \"exactDecimal\": \"166357571280020680094504\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x00000000000000000000000000000000000000000000233a43130efdb61e3328\",\n          \"requiresExactIntegerHandling\": true,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"166357571280020678115328\",\n            \"deltaDecimal\": \"-1979176\",\n            \"changesValue\": true,\n            \"outsideDeclaredRange\": false\n          }\n        },\n        {\n          \"path\": \"/message/confirmations\",\n          \"type\": \"uint256\",\n          \"widthBits\": 256,\n          \"signed\": false,\n          \"inputForm\": \"json_integer\",\n          \"parsedValue\": \"12\",\n          \"exactDecimal\": \"12\",\n          \"minimumDecimal\": \"0\",\n          \"maximumDecimal\": \"115792089237316195423570985008687907853269984665640564039457584007913129639935\",\n          \"word\": \"0x000000000000000000000000000000000000000000000000000000000000000c\",\n          \"requiresExactIntegerHandling\": false,\n          \"unsafeJsonNumber\": false,\n          \"binary64Coercion\": {\n            \"nearestIntegerDecimal\": \"12\",\n            \"deltaDecimal\": \"0\",\n            \"changesValue\": false,\n            \"outsideDeclaredRange\": false\n          }\n        }\n      ],\n      \"integerCount\": 3,\n      \"requiresExactIntegerHandling\": true,\n      \"hasUnsafeJsonNumbers\": false,\n      \"binary64CoercionChangesValue\": true,\n      \"interpretation\": \"Original exact integers determine the digest. Binary64 values are hypothetical nearest-even conversions, never substituted. Strings preserve input values but later Number coercion may lose precision. No units, token decimals or business meaning are inferred. No numeric cues does not mean approval.\",\n      \"matchesExpected\": true\n    },\n    \"providerAuthenticated\": false,\n    \"evidenceMode\": \"offline historical RPC observations\",\n    \"limits\": \"Historical provider assertions, not current settlement or a state proof. Caller policy, domain, type and digest must be independently chosen. Exact strings can still lose precision if later coerced to Number. A matching review authorizes no signature, token permit or payment.\"\n  },\n  \"sourceWitnessReview\": {\n    \"witnessValid\": true,\n    \"digest\": \"0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c\",\n    \"matchesExpected\": true,\n    \"nodesChecked\": 12,\n    \"hashesChecked\": 7,\n    \"hashInputBytes\": 691,\n    \"sourceTypedDataChecked\": true,\n    \"scope\": \"Witness bytes, source typed data and separately supplied digest agree; no signing authorization proven.\",\n    \"sourceMatchesWitness\": true,\n    \"sourceNodesChecked\": 12,\n    \"differences\": [],\n    \"differenceLimit\": 100,\n    \"accepted\": true\n  },\n  \"limitations\": \"Historical provider assertions, not current chain state or a state proof. Independent policy, domain, type and digest remain essential. The second Keccak implementation checks witness bytes; source binding is not a second independent encoder. No signing or payment authorization.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/snapshot-request-match/match.py",
+      "line-1/tools/snapshot-integer/live-zto.json",
+      "--method",
+      "eth_call",
+      "--params",
+      "[{\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\"data\":\"0x18160ddd\"},\"finalized\"]"
+    ],
+    "detached": false,
+    "expectedExit": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\"differences\":[{\"expected\":\"finalized\",\"kind\":\"value\",\"observed\":\"latest\",\"path\":\"/params/1\"}],\"expected_request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"finalized\"]},\"expected_request_sha256\":\"de545751507e5010d5d02c458cc38e84ad034b923a54b2c12e3f53424c4c7abf\",\"matched\":false,\"meaning\":\"Exact intended-read comparison of a validated saved snapshot; not proof that this request produced the response, Ethereum state, or freshness.\",\"observed_request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"latest\"]},\"observed_request_sha256\":\"b448f4ab36f30da374c70d150d3f7f5f9e139c55df7f1fe3f774f4c1d4cfd662\",\"response_sha256\":\"c246b76a086839ea8ee44de616317a5a95acb90bda1a5186275df5d2a765764e\",\"schema\":\"line1-snapshot-request-match-v1\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/jsonl-unique/check.py",
+      "shared/payment-evidence/policy.contract.json",
+      "line-2/tools/jsonl-unique/repeated-policy.jsonl",
+      "--unique",
+      "/tx"
+    ],
+    "detached": false,
+    "expectedExit": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"valid\": false,\n  \"complete\": true,\n  \"status\": \"rejected\",\n  \"structural\": {\n    \"valid\": true,\n    \"complete\": true,\n    \"status\": \"valid\",\n    \"summary\": {\n      \"rows\": 2,\n      \"passed\": 2,\n      \"violated\": 0,\n      \"malformed\": 0,\n      \"structural_errors\": 0\n    },\n    \"sources\": {\n      \"contract\": {\n        \"file\": \"shared/payment-evidence/policy.contract.json\",\n        \"bytes\": 705,\n        \"sha256\": \"9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b\"\n      },\n      \"document\": {\n        \"file\": \"line-2/tools/jsonl-unique/repeated-policy.jsonl\",\n        \"bytes\": 448,\n        \"sha256\": \"8a74ab11382a866387674a0bb0a299736081753a1b39ed24643d5688b608f14d\"\n      }\n    },\n    \"coordinates\": {\n      \"pointers\": \"relative to the JSON value on the reported row\",\n      \"lines\": \"one-based physical LF-delimited file lines\",\n      \"columns\": \"one-based Unicode code points, not display cells or UTF-16\",\n      \"offsets\": \"zero-based whole-file UTF-8 bytes and Unicode code points; end exclusive\",\n      \"row_bytes\": \"includes CR when present; excludes the LF delimiter\",\n      \"missing\": \"missing values anchor the containing object; no invented value token\"\n    },\n    \"rows\": [\n      {\n        \"line\": 1,\n        \"byte_start\": 0,\n        \"byte_end\": 223,\n        \"sha256\": \"da33ae876871de4e8492f6bfbae8d623aa89b2bb83cc885a7f423c4d4941c096\",\n        \"valid\": true,\n        \"status\": \"valid\",\n        \"errors\": []\n      },\n      {\n        \"line\": 2,\n        \"byte_start\": 224,\n        \"byte_end\": 447,\n        \"sha256\": \"da33ae876871de4e8492f6bfbae8d623aa89b2bb83cc885a7f423c4d4941c096\",\n        \"valid\": true,\n        \"status\": \"valid\",\n        \"errors\": []\n      }\n    ]\n  },\n  \"uniqueness\": {\n    \"pointers\": [\n      \"/tx\"\n    ],\n    \"valid\": false,\n    \"checked_rows\": 2,\n    \"skipped_malformed_lines\": [],\n    \"error_count\": 1,\n    \"errors\": [\n      {\n        \"line\": 2,\n        \"pointer\": \"/tx\",\n        \"document_source\": {\n          \"file\": \"line-2/tools/jsonl-unique/repeated-policy.jsonl\",\n          \"present\": true,\n          \"value\": {\n            \"start\": {\n              \"line\": 2,\n              \"column\": 7,\n              \"char_offset\": 230,\n              \"byte_offset\": 230\n            },\n            \"end\": {\n              \"line\": 2,\n              \"column\": 75,\n              \"char_offset\": 298,\n              \"byte_offset\": 298\n            }\n          },\n          \"key\": {\n            \"start\": {\n              \"line\": 2,\n              \"column\": 2,\n              \"char_offset\": 225,\n              \"byte_offset\": 225\n            },\n            \"end\": {\n              \"line\": 2,\n              \"column\": 6,\n              \"char_offset\": 229,\n              \"byte_offset\": 229\n            }\n          }\n        },\n        \"kind\": \"duplicate_value\",\n        \"first\": {\n          \"line\": 1,\n          \"document_source\": {\n            \"file\": \"line-2/tools/jsonl-unique/repeated-policy.jsonl\",\n            \"present\": true,\n            \"value\": {\n              \"start\": {\n                \"line\": 1,\n                \"column\": 7,\n                \"char_offset\": 6,\n                \"byte_offset\": 6\n              },\n              \"end\": {\n                \"line\": 1,\n                \"column\": 75,\n                \"char_offset\": 74,\n                \"byte_offset\": 74\n              }\n            },\n            \"key\": {\n              \"start\": {\n                \"line\": 1,\n                \"column\": 2,\n                \"char_offset\": 1,\n                \"byte_offset\": 1\n              },\n              \"end\": {\n                \"line\": 1,\n                \"column\": 6,\n                \"char_offset\": 5,\n                \"byte_offset\": 5\n              }\n            }\n          }\n        }\n      }\n    ],\n    \"equality\": \"exact decimal numeric equality; booleans, strings and null are separate types; each pointer checked independently\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/settlement-gap/gap.py",
+      "--plan",
+      "test/scratch/round16/gap3818.json",
+      "--sha256",
+      "864308c332f4ae4a37e2cd1dac5c864a28497dd561c35b4d2f37f70904b0fe52"
+    ],
+    "detached": false,
+    "expectedExit": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": false,\n  \"state\": \"gap_review_required\",\n  \"expectedPlanSha256\": \"864308c332f4ae4a37e2cd1dac5c864a28497dd561c35b4d2f37f70904b0fe52\",\n  \"actualPlanSha256\": \"864308c332f4ae4a37e2cd1dac5c864a28497dd561c35b4d2f37f70904b0fe52\",\n  \"gapChecked\": true,\n  \"evidenceChecked\": true,\n  \"limitations\": \"Historical provider assertions, not consensus, trie or full inter-block ancestry proofs. A block gap is later inclusion height minus earlier inclusion height; it is not elapsed seconds, intermediate block count, causation or a contract timelock check. No current freshness, payment amount, authorization or persistent deduplication. Keep the full plan hash independently; replacing plan and expected hash defeats this check.\",\n  \"orderReview\": {\n    \"accepted\": true,\n    \"state\": \"settlement_order_match\",\n    \"expectedPlanSha256\": \"7f2db7cfcf4e0cb3e124600064b8d9c593f8cf74c0cc59a5af4cb4bf7adc3d1d\",\n    \"actualPlanSha256\": \"7f2db7cfcf4e0cb3e124600064b8d9c593f8cf74c0cc59a5af4cb4bf7adc3d1d\",\n    \"evidenceChecked\": true,\n    \"orderChecked\": true,\n    \"limitations\": \"Historical provider assertions, not consensus, trie or inter-block ancestry proofs. Order means ascending (block number, transaction index), not causation or a successful application workflow. No payment amount, current freshness or authorization is checked. Keep the plan hash independently; replacing plan and expected hash defeats this check. No transactions are sent and no persistent ledger is updated.\",\n    \"sequence\": [\n      \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n      \"0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7\"\n    ],\n    \"batch\": {\n      \"accepted\": true,\n      \"state\": \"batch_settlement_match\",\n      \"count\": 2,\n      \"acceptedCount\": 2,\n      \"conflictingBlockNumbers\": [],\n      \"items\": [\n        {\n          \"index\": 0,\n          \"transactionHash\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n          \"policy\": {\n            \"transactionHash\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n            \"minimumConfirmations\": 12,\n            \"requireFinalized\": true\n          },\n          \"expectedSha256\": \"e94698e0aca6c350bbfcd9656a525ddaf273ec58d7f42de9c352a507da7fb1ec\",\n          \"accepted\": true,\n          \"state\": \"pinned_position_and_settlement_match\",\n          \"actualSha256\": \"e94698e0aca6c350bbfcd9656a525ddaf273ec58d7f42de9c352a507da7fb1ec\",\n          \"positionState\": \"position_and_settlement_match\",\n          \"alerts\": [],\n          \"transactionIndex\": 181,\n          \"transactionCount\": 498,\n          \"block\": {\n            \"number\": 26190898,\n            \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n          },\n          \"settlementState\": \"settled\",\n          \"head\": {\n            \"number\": 26195457,\n            \"hash\": \"0x4086aa5d86624c1bd4d25efc9e3fa1f9482c21df938d6a95c02a2a8cd273a1cd\"\n          },\n          \"inclusion\": {\n            \"number\": 26190898,\n            \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n          },\n          \"finalizedHead\": {\n            \"number\": 26195382,\n            \"hash\": \"0xe0f8b54171fffd887b2eec3884fc2e84b659778fbfcb95993575ae4db0b5d809\"\n          },\n          \"confirmations\": 4560,\n          \"finalized\": true\n        },\n        {\n          \"index\": 1,\n          \"transactionHash\": \"0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7\",\n          \"policy\": {\n            \"transactionHash\": \"0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7\",\n            \"minimumConfirmations\": 12,\n            \"requireFinalized\": true\n          },\n          \"expectedSha256\": \"09a42bfdc0fe4d0de172cd6a5bc4548447ad4f2fcf23f3f70e3122b3c2f0d902\",\n          \"accepted\": true,\n          \"state\": \"pinned_position_and_settlement_match\",\n          \"actualSha256\": \"09a42bfdc0fe4d0de172cd6a5bc4548447ad4f2fcf23f3f70e3122b3c2f0d902\",\n          \"positionState\": \"position_and_settlement_match\",\n          \"alerts\": [],\n          \"transactionIndex\": 146,\n          \"transactionCount\": 241,\n          \"block\": {\n            \"number\": 26194715,\n            \"hash\": \"0xbcf84b28f9f3add08e929da543c1c2059a768af0bca33ea4af1dcb9ca6cf58d9\"\n          },\n          \"settlementState\": \"settled\",\n          \"head\": {\n            \"number\": 26195457,\n            \"hash\": \"0x4086aa5d86624c1bd4d25efc9e3fa1f9482c21df938d6a95c02a2a8cd273a1cd\"\n          },\n          \"inclusion\": {\n            \"number\": 26194715,\n            \"hash\": \"0xbcf84b28f9f3add08e929da543c1c2059a768af0bca33ea4af1dcb9ca6cf58d9\"\n          },\n          \"finalizedHead\": {\n            \"number\": 26195382,\n            \"hash\": \"0xe0f8b54171fffd887b2eec3884fc2e84b659778fbfcb95993575ae4db0b5d809\"\n          },\n          \"confirmations\": 743,\n          \"finalized\": true\n        }\n      ],\n      \"limitations\": \"Historical provider assertions, not consensus or transaction-trie proofs. Pins and policies need independent custody. No freshness, payment amount, recipient ownership, authorization or cross-run deduplication is established. This report does not execute or record payments. Entries can sample different heads.\"\n    },\n    \"positions\": [\n      {\n        \"transactionHash\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n        \"blockNumber\": 26190898,\n        \"blockHash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\",\n        \"transactionIndex\": 181\n      },\n      {\n        \"transactionHash\": \"0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7\",\n        \"blockNumber\": 26194715,\n        \"blockHash\": \"0xbcf84b28f9f3add08e929da543c1c2059a768af0bca33ea4af1dcb9ca6cf58d9\",\n        \"transactionIndex\": 146\n      }\n    ],\n    \"problems\": []\n  },\n  \"comparisons\": [\n    {\n      \"before\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n      \"after\": \"0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7\",\n      \"minimumBlockGap\": 3818,\n      \"observedBlockGap\": 3817,\n      \"meetsMinimum\": false\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/source-witness/source_witness.py",
+      "line-4/tools/source-witness/zto-imd-substitution.json",
+      "line-4/tools/source-witness/zto-trace.json",
+      "--expect",
+      "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+    ],
+    "detached": false,
+    "expectedExit": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"witnessValid\": true,\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"matchesExpected\": true,\n  \"nodesChecked\": 12,\n  \"hashesChecked\": 7,\n  \"hashInputBytes\": 691,\n  \"sourceTypedDataChecked\": true,\n  \"scope\": \"Witness bytes, source typed data and separately supplied digest agree; no signing authorization proven.\",\n  \"sourceMatchesWitness\": false,\n  \"sourceNodesChecked\": 12,\n  \"differences\": [\n    {\n      \"path\": \"/message/token\",\n      \"reason\": \"atomic encoded word differs\"\n    }\n  ],\n  \"differenceLimit\": 100,\n  \"accepted\": false\n}\n",
+    "stderr": ""
+  }
+]

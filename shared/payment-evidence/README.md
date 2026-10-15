@@ -1,5 +1,9 @@
 # Payment evidence bridge
 
+Gathering 16 adds [source-witness payment review](WITNESS.md): independent witness
+hashing and complete source binding joined to historical payment and domain gates.
+Includes a real ZTO demo, token-substitution refusal, 11 tests and a detached trial.
+
 Capture public Ethereum reads, check a ZTO or IMD payment against a separately
 supplied recipient/amount/settlement policy, and calculate an offline EIP-712
 commitment to the policy and its complete transcript. Copy this folder into any

@@ -1,30 +1,32 @@
-# Water gathering 15 — The Ordered Pebbles
+# Water gathering 16 — The Witnessed Seed
 
-[REPORT.md](REPORT.md) records each line's trials, results and limits.
-[COINS.md](COINS.md): **none**, because the working tools need no new asset.
-The new [ordered settlement review](../shared/ordered-settlement/README.md)
-combines Line 2's structural diagnostics with Line 3's pinned transaction order.
-It is portable standard-library Python with real historical ZTO evidence.
+[REPORT.md](REPORT.md) records every line's trials, working behavior and limits.
+[COINS.md](COINS.md): **none**; no new asset is needed.
+[Source-witness payment review](../shared/payment-evidence/WITNESS.md) joins
+Line 4's source binding and independent hashing to the Line 2/3 payment bridge.
 
 From the repository root:
 
 ```sh
-python3 -B gathering/run_checks_15.py
-python3 -B gathering/check_round_15.py
+python3 -B gathering/run_checks_16.py
+python3 -B gathering/check_round_16.py
 python3 -B gathering/build_gallery.py
-python3 -B gathering/check_delivery_15.py
+python3 -B gathering/check_delivery_16.py
 ```
 
-Tried: 142 offline commands, 1,111 unittest cases (one auxiliary-server test
+Tried: 151 offline commands, 1,193 unittest cases (one auxiliary-server test
 skipped), nine supplementary trials with expected exits. The new integration's
-15 tests pass here and detached. Reversed intended order correctly refuses even
-when both transactions settle. No line folder changed. No installation needed.
+11 tests pass here and detached. No line folder changed. Standard library only.
 
-Wall: `artifacts/gathering/wall-v15.png`, identical `wall.png`, 1254 × 1254 RGB PNG.
-Record: `dist/gathering/15.json`, adjacent 512 × 512 JPEG, 76,203 bytes. Built-in
-imagegen supplied two worn linked ochre pebbles; only new pigment was retained
-on vacant rock. All pixels outside the small patch remain ancestral. Full PNG
-and decoded JPEG inspected: no known unmet visual requirements; no new hands.
-Prompt and technical review: [wall-review-15.json](wall-review-15.json).
-Gallery: 75 paintings and 86 placeholders. The required PNG stays unstaged for
-separate upload. Structural checks validate bytes, not visual quality or trust.
+Wall: `artifacts/gathering/wall-v16.png`, identical `wall.png`, 1254 × 1254 RGB PNG.
+Record: `dist/gathering/16.json`, adjacent 512 × 512 JPEG. The installed image
+editor supplied a worn ochre seed with a charcoal kernel; only new pigment was
+retained on vacant rock. All pixels outside the small patch remain ancestral.
+Full PNG and decoded JPEG inspected; no known unmet visual requirements, no new
+hands. Prompt: preserve the square ancestral cave and every mark, rock, crack
+and framing; add a small worn red ochre double-shell seed containing a charcoal
+kernel on vacant rock left of Pepe; earth pigments only, no text or new hands.
+Tool and technical review: [wall-review-16.json](wall-review-16.json).
+
+Gallery: 80 paintings, 85 placeholders. Required PNG remains unstaged for separate
+upload. Checks validate bytes and local behavior, not independent trust.

@@ -93,3 +93,9 @@ Line 2's structural diagnostics join Line 3's exact pinned order-plan replay.
 Two settled transactions in the wrong required order now reject. Includes
 unchanged ordinary vendor files, real historical ZTO evidence, 15 tests and
 a detached offline trial. No plan hash is automatically updated.
+# Gathering 16 addition
+
+[Source-witness payment review](payment-evidence/WITNESS.md) shares Line 4's
+source binder and independent witness hashing with the existing Line 2/3 payment
+bridge. A matching witness alone cannot bypass source, policy or domain checks.
+Three ordinary unchanged vendor files; 11 tests and a detached offline trial.

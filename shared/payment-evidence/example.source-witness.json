@@ -1,0 +1,188 @@
+{
+  "traceVersion": 1,
+  "primaryType": "PaymentEvidence",
+  "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+  "domainSeparator": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d",
+  "messageHash": "0xf770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822",
+  "digest": "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c",
+  "nodeOrder": "children before parents",
+  "nodes": [
+    {
+      "path": "/domain/name",
+      "type": "string",
+      "kind": "dynamic",
+      "inputBytes": 26,
+      "preimage": "0x526561642d6f6e6c79205061796d656e742045766964656e6365",
+      "preimageBytes": 26,
+      "word": "0x2ad8ac25b294864e0d51025440337ef7b83c3d9ae4cc162e9dfc8d1a1ab29f2d"
+    },
+    {
+      "path": "/domain/version",
+      "type": "string",
+      "kind": "dynamic",
+      "inputBytes": 1,
+      "preimage": "0x31",
+      "preimageBytes": 1,
+      "word": "0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6"
+    },
+    {
+      "path": "/domain/chainId",
+      "type": "uint256",
+      "kind": "atomic",
+      "normalizedValue": "1",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "path": "/domain",
+      "type": "EIP712Domain",
+      "kind": "struct",
+      "typeEncoding": "EIP712Domain(string name,string version,uint256 chainId)",
+      "typeHash": "0xc2f8787176b8ac6bf7215b4adcc1e069bf4ab82d9ab1df05a57a91d425935b6e",
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "path": "/domain/name",
+          "offsetBytes": 32,
+          "word": "0x2ad8ac25b294864e0d51025440337ef7b83c3d9ae4cc162e9dfc8d1a1ab29f2d"
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "path": "/domain/version",
+          "offsetBytes": 64,
+          "word": "0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6"
+        },
+        {
+          "name": "chainId",
+          "type": "uint256",
+          "path": "/domain/chainId",
+          "offsetBytes": 96,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        }
+      ],
+      "preimage": "0xc2f8787176b8ac6bf7215b4adcc1e069bf4ab82d9ab1df05a57a91d425935b6e2ad8ac25b294864e0d51025440337ef7b83c3d9ae4cc162e9dfc8d1a1ab29f2dc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc60000000000000000000000000000000000000000000000000000000000000001",
+      "preimageBytes": 128,
+      "word": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d"
+    },
+    {
+      "path": "/message/transactionHash",
+      "type": "bytes32",
+      "kind": "atomic",
+      "normalizedValue": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "word": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+    },
+    {
+      "path": "/message/token",
+      "type": "address",
+      "kind": "atomic",
+      "normalizedValue": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "word": "0x000000000000000000000000d782bdea4ef02a0bd391eb9089470c8080f0a68e"
+    },
+    {
+      "path": "/message/recipient",
+      "type": "address",
+      "kind": "atomic",
+      "normalizedValue": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+      "word": "0x0000000000000000000000002d30e495a15f2657d57c3e2caa08b06415c26cbf"
+    },
+    {
+      "path": "/message/minimumRaw",
+      "type": "uint256",
+      "kind": "atomic",
+      "normalizedValue": "166357571280020680094504",
+      "word": "0x00000000000000000000000000000000000000000000233a43130efdb61e3328"
+    },
+    {
+      "path": "/message/confirmations",
+      "type": "uint256",
+      "kind": "atomic",
+      "normalizedValue": "12",
+      "word": "0x000000000000000000000000000000000000000000000000000000000000000c"
+    },
+    {
+      "path": "/message/requireFinalized",
+      "type": "bool",
+      "kind": "atomic",
+      "normalizedValue": true,
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "path": "/message/transcriptHash",
+      "type": "bytes32",
+      "kind": "atomic",
+      "normalizedValue": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af",
+      "word": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af"
+    },
+    {
+      "path": "/message",
+      "type": "PaymentEvidence",
+      "kind": "struct",
+      "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+      "typeHash": "0x44b776fc47b5bb836926433eddc96b9182d784e2eb24aa5a5d114bb0e7e9665e",
+      "fields": [
+        {
+          "name": "transactionHash",
+          "type": "bytes32",
+          "path": "/message/transactionHash",
+          "offsetBytes": 32,
+          "word": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+        },
+        {
+          "name": "token",
+          "type": "address",
+          "path": "/message/token",
+          "offsetBytes": 64,
+          "word": "0x000000000000000000000000d782bdea4ef02a0bd391eb9089470c8080f0a68e"
+        },
+        {
+          "name": "recipient",
+          "type": "address",
+          "path": "/message/recipient",
+          "offsetBytes": 96,
+          "word": "0x0000000000000000000000002d30e495a15f2657d57c3e2caa08b06415c26cbf"
+        },
+        {
+          "name": "minimumRaw",
+          "type": "uint256",
+          "path": "/message/minimumRaw",
+          "offsetBytes": 128,
+          "word": "0x00000000000000000000000000000000000000000000233a43130efdb61e3328"
+        },
+        {
+          "name": "confirmations",
+          "type": "uint256",
+          "path": "/message/confirmations",
+          "offsetBytes": 160,
+          "word": "0x000000000000000000000000000000000000000000000000000000000000000c"
+        },
+        {
+          "name": "requireFinalized",
+          "type": "bool",
+          "path": "/message/requireFinalized",
+          "offsetBytes": 192,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+          "name": "transcriptHash",
+          "type": "bytes32",
+          "path": "/message/transcriptHash",
+          "offsetBytes": 224,
+          "word": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af"
+        }
+      ],
+      "preimage": "0x44b776fc47b5bb836926433eddc96b9182d784e2eb24aa5a5d114bb0e7e9665ec4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7000000000000000000000000d782bdea4ef02a0bd391eb9089470c8080f0a68e0000000000000000000000002d30e495a15f2657d57c3e2caa08b06415c26cbf00000000000000000000000000000000000000000000233a43130efdb61e3328000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000017a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af",
+      "preimageBytes": 256,
+      "word": "0xf770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822"
+    }
+  ],
+  "envelope": {
+    "prefix": "0x1901",
+    "domainOffsetBytes": 2,
+    "messageOffsetBytes": 34,
+    "preimage": "0x1901b841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807df770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822",
+    "preimageBytes": 66,
+    "digest": "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c"
+  },
+  "matchesExpected": true
+}

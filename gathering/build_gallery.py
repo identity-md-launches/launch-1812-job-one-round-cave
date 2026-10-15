@@ -30,7 +30,7 @@ def card(path, record):
     return (f'<article class="card {"pending" if pending else "painted"}">'
             f'<a class="picture" href="{esc(image)}" aria-label="{esc(label)}">'
             f'<img src="{esc(thumbnail)}" width="512" height="512" loading="lazy" '
-            f'decoding="async" alt="{esc(label if pending else values.get("Meaning", label))}"></a>'
+            f'alt="{esc(label if pending else values.get("Meaning", label))}"></a>'
             f'<div class="caption"><h3>{esc(label)}</h3>'
             f'<p>{esc("A future Pepe will leave this mark." if pending else values.get("Meaning", ""))}</p>'
             f'{"" if pending else "<p class=tool>Left behind: " + esc(values.get("Left behind", "")) + "</p>"}'

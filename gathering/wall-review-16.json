@@ -1,0 +1,45 @@
+{
+  "ancestorSha256": "bed3ef034cdc0ac958c698188b2661cec12ce8a63809600fa85c1a7c044f1769",
+  "ancestorSize": [
+    1254,
+    1254
+  ],
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "6bfc80eca4d2ffb9fcbcd82357f50d489e01245b67658c272cb6e7fabd679d1a",
+  "generatedDraftSha256": "4e733d934b1668f3dcd10e41fbf638e55c814fe83b705d35dd8272299cf9a195",
+  "generatedDraftRetained": false,
+  "sourceRectangle": [
+    350,
+    566,
+    412,
+    655
+  ],
+  "additionRectangle": [
+    420,
+    430,
+    45,
+    65
+  ],
+  "changedPixels": 716,
+  "unchangedPixels": 1571800,
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewSize": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 76244,
+  "imageTool": "mcp__image__edit_image",
+  "prompt": "Preserve the ancestral square cave and every mark, rock, crack and framing. Add a small worn red ochre double-shell seed containing a charcoal kernel on vacant rock left of central Pepe. Earth pigments only; no new hands, letters, numbers, logos, borders or erasure.",
+  "reviewStatus": "visually inspected full PNG and decoded JPEG",
+  "unmetVisualRequirements": [],
+  "newHands": 0,
+  "newHandprints": 0,
+  "digitReview": "No new hands or handprints; no digit-bearing marks altered."
+}

@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "wall": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB"
+  },
+  "preview": {
+    "format": "JPEG",
+    "width": 512,
+    "height": 512
+  },
+  "paintedRecords": 80,
+  "placeholderRecords": 85,
+  "galleryRecords": 165,
+  "unmetVisualRequirements": [],
+  "lineFoldersUnchanged": true,
+  "vendoredProvenanceVerified": true,
+  "visualReview": "Recorded separately in REPORT.md; this checker validates structure, not appearance."
+}
